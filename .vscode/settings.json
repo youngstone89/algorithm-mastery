@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "linkedlist/java",
+        "hashmap/java",
         "graph/java",
-        "hashmap/java"
+        "dynamic/java"
     ]
 }

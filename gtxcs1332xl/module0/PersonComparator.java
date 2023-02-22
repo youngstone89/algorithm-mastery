@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 public class PersonComparator implements Comparator<Person> {
     
@@ -7,6 +9,15 @@ public class PersonComparator implements Comparator<Person> {
     }
     public static void main(String[] args) {
         System.err.println("hi");
-    }
-    
+        Person p1 = new Person("Ivan", 1);
+        Person p2 = new Person("Mary", 2);
+        ArrayList<Person> ps = new ArrayList<Person>();
+        ps.add(p1);
+        ps.add(p2);
+        Collections.sort(ps, new PersonComparator());
+        
+        for (Person p : ps) {
+            System.out.println(p);
+        }
+    }   
 }

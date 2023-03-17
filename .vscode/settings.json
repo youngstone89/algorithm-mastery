@@ -2,8 +2,9 @@
     "java.project.sourcePaths": [
         "linkedlist/java",
         "hashmap/java",
+        "gtxcs1332xl/module0",
         "graph/java",
         "dynamic/java",
-        "gtxcs1332xl/module0"
+        "lab"
     ]
 }

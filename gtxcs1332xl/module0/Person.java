@@ -44,6 +44,9 @@ class Person implements Comparable<Person> {
 
         Person person2 = new Person("Ivan", 43);
 
+        
+        System.out.println("persone1 comparedTo persone1: "+ String.valueOf(person1.compareTo(person2)));
+
         Person person3 = new Person("Adrianna", 15);
 
         Person person4 = new Person("Mary", 26);

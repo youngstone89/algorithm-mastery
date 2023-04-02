@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Person",
+            "request": "launch",
+            "mainClass": "Person",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch SinglyLinkedList",
+            "request": "launch",
+            "mainClass": "SinglyLinkedList",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Duplicate",
+            "request": "launch",
+            "mainClass": "Duplicate",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch LinkedListIterable",
             "request": "launch",
             "mainClass": "LinkedListIterable",

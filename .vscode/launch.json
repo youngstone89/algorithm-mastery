@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PowerOfNumberOptimizedDivideNConquer",
+            "request": "launch",
+            "mainClass": "PowerOfNumberOptimizedDivideNConquer",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch PowerOfNumberDivideNConquer",
+            "request": "launch",
+            "mainClass": "PowerOfNumberDivideNConquer",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch PowerOfNumberRecursive",
+            "request": "launch",
+            "mainClass": "PowerOfNumberRecursive",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch PowerOfNumber",
+            "request": "launch",
+            "mainClass": "PowerOfNumber",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch Duplicate",
             "request": "launch",
             "mainClass": "Duplicate",

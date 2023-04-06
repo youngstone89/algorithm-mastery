@@ -1,11 +1,12 @@
 {
     "java.project.sourcePaths": [
+        "recursion/java",
         "linkedlist/java",
+        "lab",
         "hashmap/java",
         "gtxcs1332xl/module0",
         "graph/java",
         "dynamic/java",
-        "recursion/java",
-        "lab"
+        "number/java"
     ]
 }

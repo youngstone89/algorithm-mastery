@@ -63,11 +63,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "doubly linked list",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/linkedlist/javascript/singly_linked_list_v2.js"
+            "program": "${workspaceFolder}/linkedlist/javascript/doubly_linked_list_v1.js"
         }
     ]
 }

@@ -23,12 +23,12 @@ class DoublyLinkedList {
         if (this.head === null && this.tail === null && this.size === 0) {
             this.head = newNode
             this.tail = newNode
-            this.size += 1
-            return
+        } else { 
+            this.tail.next = newNode
+            newNode.prev = this.tail
+            this.tail = newNode
         }
-        this.tail.next = newNode
-        newNode.prev = this.tail
-        this.tail = newNode
+        this.size += 1
 
     }
     addAtIndex(data, idx) {
@@ -74,6 +74,29 @@ class DoublyLinkedList {
         this.tail = newNode
         this.size += 1
     }
+    removeFromFront() {
+        // edge case 1 : empty list
+        if (this.head === null && this.tail === null && this.size === 0) { 
+            // nothing to do
+            return
+        }
+        // edge case 2:  when list size is 1
+        if (this.size === 1) {
+            this.head = null
+            this.tail = null
+        // common case : when size is greater than equal to 2
+        } else { 
+            //  head: (ref:0), tail: (ref:2)
+            // before  list : (null,0,ref->1) - (ref<-0, 1, ref->2) - (ref<-1, 2, null)
+            // after #1  list : (null,0,ref->1) - (null, 1, ref->2) - (ref<-1, 2, null)
+            // after #2  head: (ref:1), tail: (ref:2)
+            this.head.next.prev = null
+            this.head = this.head.next
+        }
+        // regardless decrement size
+        this.size -= 1
+        
+    }
     printList() {
         let current = this.head;
         let result = ''
@@ -105,11 +128,13 @@ class Node {
 // driver code
 const dll = new DoublyLinkedList();
 
-dll.addAtIndex(0, 0)
+dll.addToBack(0)
+dll.addToBack(1)
+dll.addToBack(2)
+dll.addToBack(3)
+dll.addToBack(4)
+dll.addToBack(5)
+dll.addToBack(6)
 dll.printList()
-dll.addAtIndex(1, 1)
-dll.printList()
-dll.addAtIndex(2, 2)
-dll.printList()
-dll.addAtIndex(3, 2)
+dll.removeFromFront()
 dll.printList()

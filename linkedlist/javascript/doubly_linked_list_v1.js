@@ -85,7 +85,7 @@ class DoublyLinkedList {
             this.head = null
             this.tail = null
         // common case : when size is greater than equal to 2
-        } else { 
+        } else {
             //  head: (ref:0), tail: (ref:2)
             // before  list : (null,0,ref->1) - (ref<-0, 1, ref->2) - (ref<-1, 2, null)
             // after #1  list : (null,0,ref->1) - (null, 1, ref->2) - (ref<-1, 2, null)
@@ -95,9 +95,53 @@ class DoublyLinkedList {
         }
         // regardless decrement size
         this.size -= 1
-        
+    }
+    removeAtIndex(index) {
+        if (index < 0 || index > this.size - 1) {
+            // no valid index range
+            return
+        }
+        // edge case 1: empty list
+        if (this.head === null && this.tail === null && this.size === 0) {
+            // nothing to remove
+            return
+        } 
+        // edge case 2: size 1
+        if (this.size === 1) {
+            // (head>ref:0, list:(null,0,null) ,tail>ref:0)
+            this.head = null
+            this.tail = null
+        } else {
+            // (head>ref:0, list:(null,0,next>ref:1)-(ref:0<prev,1,next>ref:2)-(ref:1<prev,2,null) ,tail>ref:0)
+            // e.g) remove index 1
+            let currentNode = this.head
+            let idx = 0
+            while (idx <= index) {
+                if (idx === index) {
+                    break
+                }
+                idx += 1
+                currentNode = currentNode.next
+            }
+            const prevNode = currentNode.prev
+            const nextNode = currentNode.next
+            if (prevNode) {
+                prevNode.next = nextNode
+                this.head= prevNode
+            } else { 
+                this.head = nextNode
+            }
+            if (nextNode) {
+                nextNode.prev = prevNode
+            } else { 
+                this.tail = prevNode
+            }
+
+        }
+        this.size -= 1
     }
     printList() {
+        console.log(`head: ${this.head}, tail: ${this.tail}`)
         let current = this.head;
         let result = ''
         while (current !== null) {
@@ -137,4 +181,16 @@ dll.addToBack(5)
 dll.addToBack(6)
 dll.printList()
 dll.removeFromFront()
+dll.printList()
+dll.removeAtIndex(0)
+dll.printList()
+dll.removeAtIndex(0)
+dll.printList()
+dll.removeAtIndex(0)
+dll.printList()
+dll.removeAtIndex(0)
+dll.printList()
+dll.removeAtIndex(1)
+dll.printList()
+dll.removeAtIndex(0)
 dll.printList()

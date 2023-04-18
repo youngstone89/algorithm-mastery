@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SinglyLinkedListDriver",
+            "request": "launch",
+            "mainClass": "SinglyLinkedListDriver",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch PowerOfNumberOptimizedDivideNConquer",
             "request": "launch",
             "mainClass": "PowerOfNumberOptimizedDivideNConquer",

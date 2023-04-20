@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 /**
  * Your implementation of a Singly-Linked List.
  */
@@ -24,6 +26,22 @@ public class SinglyLinkedList<T> {
      */
     public void addToFront(T data) {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
+        if (data == null) {
+            throw new IllegalArgumentException("data ia null!");
+        }
+        // create a new node
+        SinglyLinkedListNode<T> newNode = new SinglyLinkedListNode<>(data);
+        // when list size is zero (head and tail are empty)
+        if (this.size == 0 || this.head == null || this.tail == null) {
+            this.head = newNode;
+            this.tail = newNode;
+            // size >= 1
+        } else {
+            newNode.setNext(this.head);
+            this.head = newNode;
+        }
+        // increment size by 1
+        this.size += 1;
     }
 
     /**
@@ -36,6 +54,20 @@ public class SinglyLinkedList<T> {
      */
     public void addToBack(T data) {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
+        if (data == null) {
+            throw new IllegalArgumentException("data ia null!");
+        }
+        SinglyLinkedListNode<T> newNode = new SinglyLinkedListNode<>(data);
+        // empty list
+        if (this.size == 0 || this.head == null | this.tail == null) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else {
+            this.tail.setNext(newNode);
+            this.tail = newNode;
+        }
+
+        this.size += 1;
     }
 
     /**
@@ -48,7 +80,12 @@ public class SinglyLinkedList<T> {
      */
     public T removeFromFront() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
-        return null;
+        if (this.size == 0 || this.head == null || this.tail == null) {
+            throw new NoSuchElementException("the list is empty");
+        }
+        T data = this.head.getData();
+        this.head = this.head.getNext();
+        return data;
     }
 
     /**
@@ -61,7 +98,27 @@ public class SinglyLinkedList<T> {
      */
     public T removeFromBack() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
-        return null;
+        if (this.size == 0 || this.head == null || this.tail == null) {
+            throw new NoSuchElementException("the list is empty");
+        }
+        T data = this.tail.getData();
+        if (this.size == 1) {
+            this.head = null;
+            this.tail = null;
+        } else if (this.size == 2) {
+            this.head.setNext(null);
+            this.tail = this.head;
+        } else {
+            SinglyLinkedListNode<T> current = this.head;
+            while (current.getNext().getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(null);
+            this.tail = current;
+        }
+        this.size -= 1;
+
+        return data;
     }
 
     /**

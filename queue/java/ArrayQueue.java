@@ -48,6 +48,12 @@ public class ArrayQueue<T> {
         // add to back of the array
         // get the index of the last element = front + size
         Integer index = this.front + this.size;
+        // check if index is within the range
+        if (index >= this.size) {
+            // resize
+            Integer newSize = INITIAL_CAPACITY * 2;
+            T[] newArray = (T[]) new Object[INITIAL_CAPACITY];
+        }
         this.backingArray[index] = data;
         this.size++;
     }

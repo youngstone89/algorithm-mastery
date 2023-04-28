@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayQueueDriver",
+            "request": "launch",
+            "mainClass": "ArrayQueueDriver",
+            "projectName": "algorithm-mastery_f9bf800b"
+        },
+        {
+            "type": "java",
             "name": "Launch SinglyLinkedListDriver",
             "request": "launch",
             "mainClass": "SinglyLinkedListDriver",

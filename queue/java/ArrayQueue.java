@@ -42,20 +42,30 @@ public class ArrayQueue<T> {
      */
     public void enqueue(T data) {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
+        System.out.println("enqueue data: " + data);
         if (data == null) {
             throw new IllegalArgumentException("data is null!");
         }
+        // check if index is within the range
+        if (this.size == this.backingArray.length) {
+            System.out.println("resizing array");
+            // resize
+            T[] newArray = (T[]) new Object[this.backingArray.length * 2];
+
+            // copy original array to new array
+            for (int i = 0; i < this.backingArray.length; i++) {
+                newArray[i] = this.backingArray[i];
+            }
+            this.backingArray = newArray;
+            this.front = 0;
+        }
         // add to back of the array
         // get the index of the last element = front + size
-        Integer index = this.front + this.size;
-        // check if index is within the range
-        if (index >= this.size) {
-            // resize
-            Integer newSize = INITIAL_CAPACITY * 2;
-            T[] newArray = (T[]) new Object[INITIAL_CAPACITY];
-        }
+        Integer index = (this.front + this.size) % this.backingArray.length;
+        System.out.println("inserting at index: " + index);
         this.backingArray[index] = data;
         this.size++;
+        System.out.println("current front: " + this.front + "\t current size: " + this.size);
     }
 
     /**
@@ -76,8 +86,11 @@ public class ArrayQueue<T> {
     public T dequeue() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
         T data = this.backingArray[front];
+        System.out.println("dequeue data: " + data);
         this.backingArray[front] = null;
         this.front++;
+        this.size--;
+        System.out.println("current front: " + this.front + "\t current size: " + this.size);
         return data;
     }
 

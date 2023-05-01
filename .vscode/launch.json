@@ -9,6 +9,13 @@
             "name": "Launch ArrayQueueDriver",
             "request": "launch",
             "mainClass": "ArrayQueueDriver",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayQueueDriver",
+            "request": "launch",
+            "mainClass": "ArrayQueueDriver",
             "projectName": "algorithm-mastery_f9bf800b"
         },
         {

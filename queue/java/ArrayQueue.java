@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 /**
  * Your implementation of an ArrayQueue.
  */
@@ -42,13 +44,11 @@ public class ArrayQueue<T> {
      */
     public void enqueue(T data) {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
-        System.out.println("enqueue data: " + data);
         if (data == null) {
             throw new IllegalArgumentException("data is null!");
         }
         // check if index is within the range
         if (this.size == this.backingArray.length) {
-            System.out.println("resizing array");
             // resize
             T[] newArray = (T[]) new Object[this.backingArray.length * 2];
 
@@ -62,10 +62,8 @@ public class ArrayQueue<T> {
         // add to back of the array
         // get the index of the last element = front + size
         Integer index = (this.front + this.size) % this.backingArray.length;
-        System.out.println("inserting at index: " + index);
         this.backingArray[index] = data;
         this.size++;
-        System.out.println("current front: " + this.front + "\t current size: " + this.size);
     }
 
     /**
@@ -85,12 +83,15 @@ public class ArrayQueue<T> {
      */
     public T dequeue() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
+        if (this.size == 0) {
+            throw new NoSuchElementException("Queue is empty");
+        }
         T data = this.backingArray[front];
-        System.out.println("dequeue data: " + data);
         this.backingArray[front] = null;
-        this.front++;
+        this.front += 1;
+        Integer frntIdx = this.front % this.backingArray.length;
+        this.front = frntIdx;
         this.size--;
-        System.out.println("current front: " + this.front + "\t current size: " + this.size);
         return data;
     }
 

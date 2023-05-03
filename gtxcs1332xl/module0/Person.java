@@ -6,7 +6,6 @@ class Person implements Comparable<Person> {
     private String name;
     private int age;
 
-    
     @Override
     public String toString() {
         return "Person [name=" + name + ", age=" + age + "]";
@@ -44,8 +43,7 @@ class Person implements Comparable<Person> {
 
         Person person2 = new Person("Ivan", 43);
 
-        
-        System.out.println("persone1 comparedTo persone1: "+ String.valueOf(person1.compareTo(person2)));
+        System.out.println("person1's is younger than person2 " + String.valueOf(person1.compareTo(person2)));
 
         Person person3 = new Person("Adrianna", 15);
 

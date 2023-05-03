@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PersonComparator",
+            "request": "launch",
+            "mainClass": "PersonComparator",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayQueueDriver",
             "request": "launch",
             "mainClass": "ArrayQueueDriver",

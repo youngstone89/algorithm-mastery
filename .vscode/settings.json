@@ -1,11 +1,12 @@
 {
     "java.project.sourcePaths": [
+        "queue/java",
         "linkedlist/java",
         "lab",
         "hashmap/java",
         "gtxcs1332xl/module0",
         "graph/java",
         "dynamic/java",
-        "queue/java"
+        "tree/java"
     ]
 }

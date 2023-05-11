@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BinarySearchTreeLevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "BinarySearchTreeLevelOrderTraversal",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch BinarySearchTree",
             "request": "launch",
             "mainClass": "BinarySearchTree",

@@ -8,5 +8,6 @@
         "graph/java",
         "dynamic/java",
         "tree/java"
-    ]
+    ],
+    "python.linting.enabled": true
 }

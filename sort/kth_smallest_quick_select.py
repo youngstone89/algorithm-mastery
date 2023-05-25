@@ -49,6 +49,7 @@ def kthSmallest(arr, l, r, k):
         index = partition(arr, l, r)
 
         # if position is same as k
+        # kth Smallest meaning k - 1 index position in array
         if (index - l == k - 1):
             return arr[index]
 

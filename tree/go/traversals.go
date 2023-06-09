@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+type genericList []any
+type dataList *genericList
+
 type Traversals struct {
 	root *TreeNode
 }
@@ -13,12 +16,12 @@ func NewTraversals(root *TreeNode) *Traversals {
 }
 
 func (t *Traversals) getPreOrder() []any {
-	list := make([]any, 0)
+	list := make(genericList, 0)
 	preorder(&list, t.root)
 	return list
 }
 
-func preorder(list *[]any, root *TreeNode) {
+func preorder(list dataList, root *TreeNode) {
 	if root == nil {
 		return
 	}

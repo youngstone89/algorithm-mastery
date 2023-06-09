@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "tree/java",
         "queue/java",
         "linkedlist/java",
         "lab",
@@ -7,7 +8,7 @@
         "gtxcs1332xl/module0",
         "graph/java",
         "dynamic/java",
-        "tree/java"
+        "gtxcs1332xll/module4"
     ],
     "python.linting.enabled": true
 }

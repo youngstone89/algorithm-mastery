@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Driver",
+            "request": "launch",
+            "mainClass": "Driver",
+            "projectName": "algorithm-mastery_f9bf800b"
+        },
+        {
+            "type": "java",
             "name": "Launch BinarySearchTreeLevelOrderTraversal",
             "request": "launch",
             "mainClass": "BinarySearchTreeLevelOrderTraversal",

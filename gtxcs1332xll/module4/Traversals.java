@@ -1,7 +1,5 @@
-import java.util.List;
-import java.util.Queue;
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Your implementation of the pre-order, in-order, and post-order

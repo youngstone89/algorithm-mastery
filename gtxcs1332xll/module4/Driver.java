@@ -3,6 +3,30 @@ import java.util.List;
 public class Driver<T> {
     public static void main(String[] args){
         
+        TreeNode root = makeTree();
+        Traversals traversals = new Traversals<>();
+        
+        System.out.println("Preorder tranversals");
+        List dataList = traversals.preorder(root);
+        for (Object data : dataList) {
+            System.out.println(data);
+        }
+        System.out.println("");
+        System.out.println("Inorder tranversals");
+        dataList = traversals.inorder(root);
+        for (Object data: dataList){
+            System.out.println(data);
+        }
+
+        System.out.println("");
+        System.out.println("Postorder tranversals");
+        dataList = traversals.postorder(root);
+        for (Object data: dataList){
+            System.out.println(data);
+        }
+    }
+
+    private static TreeNode makeTree() {
         TreeNode root = new TreeNode(50);
 
         TreeNode node25 = new TreeNode(25);
@@ -21,15 +45,8 @@ public class Driver<T> {
         node100.setRight(node125);
 
         TreeNode node110 = new TreeNode(110);
-        node125.setRight(node110);
-
-        
-        Traversals traversals = new Traversals<>();
-        
-        List dataList = traversals.preorder(root);
-        for (Object data : dataList) {
-            System.out.println(data);
-        }
+        node125.setLeft(node110);
+        return root;
     }
     
 }

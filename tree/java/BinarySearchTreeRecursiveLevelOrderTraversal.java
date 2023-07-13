@@ -10,7 +10,7 @@ class Node {
     }
 }
 
-public class BinarySearchTree {
+public class BinarySearchTreeRecursiveLevelOrderTraversal {
     Node root;
 
     public int FindMinDepth() {
@@ -37,7 +37,7 @@ public class BinarySearchTree {
     }
 
     public static void main(String[] args) {
-        BinarySearchTree tree = new BinarySearchTree();
+        BinarySearchTreeRecursiveLevelOrderTraversal tree = new BinarySearchTreeRecursiveLevelOrderTraversal();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.right = new Node(3);

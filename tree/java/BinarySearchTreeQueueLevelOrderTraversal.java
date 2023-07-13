@@ -21,7 +21,7 @@ class Item {
     }
 }
 
-public class BinarySearchTreeLevelOrderTraversal {
+public class BinarySearchTreeQueueLevelOrderTraversal {
 
     Node root;
 
@@ -67,7 +67,7 @@ public class BinarySearchTreeLevelOrderTraversal {
     // Queue implementation
     public static void main(String[] args) {
 
-        BinarySearchTreeLevelOrderTraversal tree = new BinarySearchTreeLevelOrderTraversal();
+        BinarySearchTreeQueueLevelOrderTraversal tree = new BinarySearchTreeQueueLevelOrderTraversal();
         Node root = newNode(1);
         root.left = newNode(2);
         root.right = newNode(3);

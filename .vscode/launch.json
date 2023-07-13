@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BinarySearchTreeSearch",
+            "request": "launch",
+            "mainClass": "BinarySearchTreeSearch",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearchTreeDeletion",
+            "request": "launch",
+            "mainClass": "BinarySearchTreeDeletion",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "BinarySearchTreeLevelOrderTraversal",
             "request": "launch",
             "mainClass": "BinarySearchTreeLevelOrderTraversal",

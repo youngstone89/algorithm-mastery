@@ -28,6 +28,7 @@ public class BinarySearchTreeDeletion {
         inorderTraversal(root);
     }
 
+    // left - center - right
     private void inorderTraversal(Node root) {
         if (root == null) {
             return;

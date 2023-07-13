@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinarySearchTreeLevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "BinarySearchTreeLevelOrderTraversal",
+            "projectName": "algorithm-mastery_f9bf800b"
+        },
+        {
+            "type": "java",
+            "name": "linkedlisttest",
+            "request": "launch",
+            "mainClass": "linkedlisttest",
+            "projectName": "algorithm-mastery_f9bf800b"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearchTreeDeletion",
+            "request": "launch",
+            "mainClass": "BinarySearchTreeDeletion",
+            "projectName": "algorithm-mastery_f9bf800b"
+        },
+        {
+            "type": "java",
             "name": "Driver",
             "request": "launch",
             "mainClass": "Driver",

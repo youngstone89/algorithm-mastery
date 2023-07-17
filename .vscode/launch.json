@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BSTDriver",
+            "request": "launch",
+            "mainClass": "BSTDriver",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComparablePerson",
+            "request": "launch",
+            "mainClass": "ComparablePerson",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch BinarySearchTreeSearch",
             "request": "launch",
             "mainClass": "BinarySearchTreeSearch",

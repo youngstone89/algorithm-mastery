@@ -5,10 +5,11 @@
         "linkedlist/java",
         "lab",
         "hashmap/java",
+        "gtxcs1332xll/module4",
         "gtxcs1332xl/module0",
         "graph/java",
         "dynamic/java",
-        "gtxcs1332xll/module4"
+        "gtxcs1332xll/module5"
     ],
     "python.linting.enabled": true
 }

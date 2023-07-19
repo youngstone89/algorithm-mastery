@@ -84,6 +84,23 @@ public class BST<T extends Comparable<? super T>> {
      */
     public T remove(T data) {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
+        root = this.remove(root, data);
+        return data;
+    }
+
+    private BSTNode<T> remove(BSTNode<T> root, T data) {
+        if (data == null) {
+            throw new IllegalArgumentException();
+        }
+        if (data.compareTo(root.getData()) <= -1) {
+            root.setLeft(remove(root.getLeft(), data));
+        } else if (data.compareTo(root.getData()) >= 1) {
+            root.setRight(remove(root.getRight(), data));
+        } else if (data.compareTo(root.getData()) == 0) {
+            root.setData(null);
+            this.size--;
+        }
+        return root;
     }
 
     /**

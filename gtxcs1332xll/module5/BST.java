@@ -97,7 +97,7 @@ public class BST<T extends Comparable<? super T>> {
         } else if (data.compareTo(root.getData()) >= 1) {
             root.setRight(remove(root.getRight(), data));
         } else if (data.compareTo(root.getData()) == 0) {
-            root.setData(null);
+            root = null;
             this.size--;
         }
         return root;

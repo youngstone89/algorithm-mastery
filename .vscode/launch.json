@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TopKFrequent",
+            "request": "launch",
+            "mainClass": "TopKFrequent",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch BSTDriver",
             "request": "launch",
             "mainClass": "BSTDriver",

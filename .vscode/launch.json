@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ThreeSum",
+            "request": "launch",
+            "mainClass": "ThreeSum",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "QuickSort",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch Palindrome",
             "request": "launch",
             "mainClass": "Palindrome",

@@ -10,7 +10,8 @@
         "gtxcs1332xl/module0",
         "graph/java",
         "dynamic/java",
-        "array/java"
+        "array/java",
+        "sort/java"
     ],
     "python.linting.enabled": true
 }

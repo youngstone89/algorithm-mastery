@@ -1,0 +1,9 @@
+goos: darwin
+goarch: amd64
+cpu: Intel(R) Core(TM) i9-9980HK CPU @ 2.40GHz
+BenchmarkBubbleSort/input_size_8-16         	1000000000	         6.382 ns/op	       0 B/op	       0 allocs/op
+BenchmarkBubbleSort/input_size_10-16        	1000000000	         7.170 ns/op	       0 B/op	       0 allocs/op
+BenchmarkBubbleSort/input_size_15-16        	1000000000	         9.492 ns/op	       0 B/op	       0 allocs/op
+BenchmarkBubbleSort/input_size_17-16        	1000000000	        10.98 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	_/Users/yeongseokkim/Workspace/algorithm-mastery/sort/go	37.789s

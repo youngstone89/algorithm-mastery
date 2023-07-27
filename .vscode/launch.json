@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PrefixTree",
+            "request": "launch",
+            "mainClass": "PrefixTree",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch InvertBinaryTree",
+            "request": "launch",
+            "mainClass": "InvertBinaryTree",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch ThreeSum",
             "request": "launch",
             "mainClass": "ThreeSum",

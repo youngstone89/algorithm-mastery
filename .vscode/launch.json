@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BinaryTreeLevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "BinaryTreeLevelOrderTraversal",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumDepthTree",
+            "request": "launch",
+            "mainClass": "MaximumDepthTree",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch Search2DMatrix",
             "request": "launch",
             "mainClass": "Search2DMatrix",

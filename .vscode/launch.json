@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NumberOfIslands",
+            "request": "launch",
+            "mainClass": "NumberOfIslands",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch BinaryTreeLevelOrderTraversal",
             "request": "launch",
             "mainClass": "BinaryTreeLevelOrderTraversal",

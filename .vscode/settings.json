@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "tree/java",
+        "string/java",
         "sort/java",
         "queue/java",
         "linkedlist/java",
@@ -12,7 +13,7 @@
         "graph/java",
         "dynamic/java",
         "array/java",
-        "string/java"
+        "stacks/java"
     ],
     "python.linting.enabled": true
 }

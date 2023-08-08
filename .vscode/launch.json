@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RotateImage",
+            "request": "launch",
+            "mainClass": "RotateImage",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch NumberOfIslands",
             "request": "launch",
             "mainClass": "NumberOfIslands",

@@ -13,8 +13,9 @@
         "gtxcs1332xl/module0",
         "graph/java",
         "dynamic/java",
+        "bit/java",
         "array/java",
-        "bit/java"
+        "backtracking/java"
     ],
     "python.linting.enabled": true
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MinCostConnectPointsPrims",
+            "request": "launch",
+            "mainClass": "MinCostConnectPointsPrims",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch Subsets",
             "request": "launch",
             "mainClass": "Subsets",

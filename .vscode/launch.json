@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CheapestFlightsKStops",
+            "request": "launch",
+            "mainClass": "CheapestFlightsKStops",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch MinCostConnectPointsPrims",
             "request": "launch",
             "mainClass": "MinCostConnectPointsPrims",

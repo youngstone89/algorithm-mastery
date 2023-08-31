@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NetworkDelayTimeBFS",
+            "request": "launch",
+            "mainClass": "NetworkDelayTimeBFS",
+            "projectName": "algorithm-mastery_eed185d3"
+        },
+        {
+            "type": "java",
             "name": "Launch NetworkDelayTimeDFS",
             "request": "launch",
             "mainClass": "NetworkDelayTimeDFS",

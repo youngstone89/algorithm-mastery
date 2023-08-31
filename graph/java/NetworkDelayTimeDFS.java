@@ -85,3 +85,26 @@ public class NetworkDelayTimeDFS {
         System.out.println(networkDelayTime(times, 2, 1));
     }
 }
+
+// java.lang.StackOverflowError
+
+// at line 338,java.base/java.util.HashMap.hash
+// at line 568,java.base/java.util.HashMap.getNode
+// at line 594,java.base/java.util.HashMap.containsKey
+// at line 39,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS at line 45,
+// Solution.DFS
+// at line 45,Solution.
+// DFS

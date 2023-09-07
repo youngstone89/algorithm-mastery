@@ -31,6 +31,29 @@ func preorder(list dataList, root *TreeNode) {
 	return
 }
 
+func (t *Traversals) getLevelOrder() []any {
+	list := make(genericList, 0)
+	levelorder(&list, t.root)
+	return list
+}
+
+func levelorder(list dataList, root *TreeNode) {
+	queue := make([]*TreeNode, 0)
+	queue = append(queue, root)
+	for len(queue) > 0 {
+		node := queue[0]
+		*list = append(*list, node.data)
+		queue = queue[1:]
+		if node.left != nil {
+			queue = append(queue, node.left)
+		}
+		if node.right != nil {
+			queue = append(queue, node.right)
+		}
+	}
+
+}
+
 type TreeNode struct {
 	data  any
 	left  *TreeNode
@@ -71,4 +94,10 @@ func main() {
 	for _, data := range list {
 		fmt.Printf("%v\n", data)
 	}
+	fmt.Println("Level Order")
+	levelOrderlist := traversals.getLevelOrder()
+	for _, data := range levelOrderlist {
+		fmt.Printf("%v\n", data)
+	}
+
 }

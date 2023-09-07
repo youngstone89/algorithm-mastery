@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "[Go]DijkstrasShortestPath",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "graph/go/DijkstrasShortestPath.go"
+        },
+        {
+            "type": "java",
+            "name": "DijkstrasShortestPathPrim",
+            "request": "launch",
+            "mainClass": "DijkstrasShortestPathPrim",
+            "projectName": "algorithm-mastery_f9bf800b"
+        },
+        {
             "type": "java",
             "name": "Launch NetworkDelayTimeDijkstra",
             "request": "launch",

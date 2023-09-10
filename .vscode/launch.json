@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "ContainsDuplicate",
+            "request": "launch",
+            "mainClass": "ContainsDuplicate",
+            "projectName": "algorithm-mastery_f9bf800b"
+        },
+        {
             "name": "[Go]DijkstrasShortestPath",
             "type": "go",
             "request": "launch",

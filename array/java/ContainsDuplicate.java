@@ -19,3 +19,5 @@ class ContainsDuplicate {
 
     }
 }
+// T: O(n)
+// S: O(n)

@@ -17,5 +17,6 @@
         "array/java",
         "backtracking/java"
     ],
-    "python.linting.enabled": true
+    "python.linting.enabled": false,
+    "python.formatting.provider": "autopep8"
 }
